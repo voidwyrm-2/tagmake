@@ -8,7 +8,11 @@ import (
 func main() {
 	makeContent, makeFErr := readFile("./TagMake")
 	if makeFErr != nil {
-		fmt.Println(makeFErr.Error())
+		if makeFErr.Error() == "open ./TagMake: no such file or directory" {
+			fmt.Println("no TagMake file found")
+		} else {
+			fmt.Println(makeFErr.Error())
+		}
 		return
 	}
 
@@ -26,8 +30,13 @@ func main() {
 			fmt.Println("error: output path cannot be empty")
 			return
 		}
+	} else if len(outpath) > 0 {
+		madeTag += ".json"
+		if madeTag[0] == '.' {
+			madeTag = "o" + madeTag
+		}
 	} else {
-		madeTag = "o_" + madeTag + ".json"
+		madeTag = "o.json"
 	}
 
 	tagWritingErr := writeFile(outpath, madeTag)
