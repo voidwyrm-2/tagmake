@@ -1,5 +1,10 @@
-!out ./ test.json
+` output path
+!out ./test.json
 
+` 'replace' can optionally be added
+` !replace true
+
+` items from the 'minecraft' namespace
 item minecraft:
 stone
 cobblestone
@@ -11,6 +16,7 @@ andesite
 diorite
 ;
 
+` tags from the 'tomacraft' namespace
 tag tomacraft:
 help
 me
@@ -18,6 +24,7 @@ please
 why
 ;
 
+` items from the 'pss' namespace
 item pss:
 ohboy
 dear
