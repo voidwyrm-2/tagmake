@@ -1,0 +1,27 @@
+!out ./ test.json
+
+item minecraft:
+stone
+cobblestone
+cobbled_deepslate
+deepslate
+tuff
+granite
+andesite
+diorite
+;
+
+tag tomacraft:
+help
+me
+please
+why
+;
+
+item pss:
+ohboy
+dear
+huh
+but
+ok
+;

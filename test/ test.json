@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:stone",
+        "minecraft:cobblestone",
+        "minecraft:cobbled_deepslate",
+        "minecraft:deepslate",
+        "minecraft:tuff",
+        "minecraft:granite",
+        "minecraft:andesite",
+        "minecraft:diorite",
+        "#tomacraft:help",
+        "#tomacraft:me",
+        "#tomacraft:please",
+        "#tomacraft:why",
+        "pss:ohboy",
+        "pss:dear",
+        "pss:huh",
+        "pss:but",
+        "pss:ok"
+    ]
+}
